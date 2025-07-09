@@ -10,7 +10,7 @@ const ShopContextProvider = (props) => {
 
     const currency = 'Rs. ';
     const delivery_fee = 50;
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://trunkandtuskbackend.vercel.app'
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://my-ecommerce-8yer.onrender.com'
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
