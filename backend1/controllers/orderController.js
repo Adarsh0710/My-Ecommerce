@@ -231,4 +231,16 @@ const updateStatus = async (req,res) => {
     }
 }
 
+// const deleteOrder = async (req, res) => {
+//   try {
+//     const order = await orderModel.findById(req.params.id);
+//     if (!order) return res.status(404).json({ success: false, message: 'Order not found' });
+
+//     await order.remove();
+//     res.json({ success: true, message: 'Order removed' });
+//   } catch (error) {
+//     res.status(500).json({ success: false, message: error.message });
+//   }
+// };
+
 export {verifyRazorpay, verifyStripe ,placeOrder, placeOrderStripe, placeOrderRazorpay, allOrders, userOrders, updateStatus}

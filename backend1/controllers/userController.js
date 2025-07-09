@@ -99,5 +99,36 @@ const adminLogin = async (req, res) => {
     }
 }
 
+const getUserProfile = async (req, res) => {
+  try {
+    const user = await userModel.findById(req.body.userId).select('-password');
+    if (!user) return res.status(404).json({ success: false, message: 'User not found' });
 
-export { loginUser, registerUser, adminLogin }
+    res.json({ success: true, user });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+};
+
+// ✅ Update User Profile
+const updateUserProfile = async (req, res) => {
+  try {
+    const { name, email, phone } = req.body;
+    const updatedUser = await userModel.findByIdAndUpdate(
+      req.body.userId,
+      { name, email, phone },
+      { new: true }
+    ).select('-password');
+
+    if (!updatedUser) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    res.json({ success: true, user: updatedUser });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Update failed' });
+  }
+};
+export { loginUser, registerUser, adminLogin, getUserProfile, updateUserProfile  }

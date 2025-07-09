@@ -15,11 +15,10 @@ const Contact = () => {
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className=' font-semibold text-xl text-gray-600'>Our Store</p>
           <p className=' text-gray-500'>502319 Hyderabad, Telangana <br /> flat-no. 23456, Patanchreu,SriRam Colony </p> 
-          <p className=' text-gray-500'>Phon.no 6301791454<br /> Email : trunkandtusk09@gmail.com</p>
+          <p className=' text-gray-500'><br /> Email : trunkandtusk09@gmail.com</p>
           <p className='font-semibold text-2xl text-gray-800'>Careers at trunkandtusk </p>
-          <p className='text-gray-600'>Learn more about our team</p>
+          <p className='text-gray-600'></p>
           <button className='border border-blue-600 px-8 py-4 text-sm hover:bg-blue-300 hover: text-whi transition-all duration-500 '>Learn More</button>
-
         </div>
 
       </div>

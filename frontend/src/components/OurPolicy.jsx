@@ -12,10 +12,10 @@ const OurPolicy = () => {
       </div>
       <div>
         <img src={assets.quality_icon} className='w-12 m-auto mb-5' alt="" />
-        <p className=' font-semibold'>7 Days Exchange  Policy</p>
+        <p className=' font-semibold'>3 Days Exchange  Policy</p>
         
-        <p className=' text-gray-400'>We provide 7 days free exchange policy</p>
-        <p className=' text-gray-400'>If the is removed there is No Return </p>
+        <p className=' text-gray-400'>We provide 3 days free exchange policy</p>
+        <p className=' text-gray-400'></p>
       </div>
       <div>
         <img src={assets.support_img} className='w-12 m-auto mb-5' alt="" />
