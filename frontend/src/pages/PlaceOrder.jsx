@@ -145,7 +145,7 @@ We’ll notify you once your order is shipped.
 
   const initPay = async (orderData, razorpayOrder) => {
     const options = {
-      key: import.meta.env.RAZORPAY_KEY_ID,
+      key: 'rzp_test_rPECoqgQT8NyKh',
       amount: razorpayOrder.amount,
       currency: razorpayOrder.currency,
       name: 'Order Payment',
